@@ -1,0 +1,10 @@
+cursor:
+  style:
+    shape: Underline
+    blinking: Always
+
+font:
+  normal:
+    family: Jetbrains Mono
+    style: Regular
+  size: 16
