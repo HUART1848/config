@@ -1,32 +1,29 @@
 icons_format = "{icon}"
-[icons]
-icons = "awesome4"
+
 [icons.overrides]
-bat = "BAT"
-bat_full = "=="
-bat_charging = "++"
-bat_discharging = "--"
+bat = "---"
+bat_full = "==="
+bat_charging = "+++"
 
 [[block]]
 block = "focused_window"
+format = "$title.str(max_w:50) | "
 
 [[block]]
 block = "cpu"
-interval=2
+interval = 2
 format = "$utilization1 $utilization2 $utilization3 $utilization4 $utilization5 $utilization6 $utilization7 $utilization8 $utilization9 $utilization10 $utilization11 $utilization12 $utilization13 $utilization14 $utilization15 $utilization16 "
-
-#[[block]]
-#block = "custom"
-#command = ''' cat /sys/class/thermal/thermal_zone0/temp | awk '{printf("%.1f\n",$1/1000)}' '''
 
 [[block]]
 block = "memory"
 format = " MEM $mem_used_percents "
+interval = 2
 
 [[block]]
 block = "battery"
+driver = "upower"
 format = "$power $icon $percentage $time "
-interval = 5
+interval = 4
 
 [[block]]
 block = "time"
