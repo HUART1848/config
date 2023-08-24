@@ -3,6 +3,8 @@ Personal .config files
 
 ## Dependencies
 
+These files configure the following softwares:
+
 ```
 alacritty
 dmenu
