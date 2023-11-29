@@ -20,10 +20,19 @@ format = " MEM $mem_used_percents "
 interval = 2
 
 [[block]]
+block = "memory"
+format = " SWAP $swap_used_percents "
+interval = 2
+
+[[block]]
 block = "battery"
 driver = "upower"
 format = "$power $icon $percentage $time "
 interval = 4
+
+[[block]]
+block = "sound"
+step_width = 3
 
 [[block]]
 block = "time"
