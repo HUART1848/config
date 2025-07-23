@@ -6,9 +6,17 @@ Personal .config files
 These files configure the following softwares:
 
 ```
-alacritty (NOTE: With JetBrains Mono as terminal font)
+alacritty
 dmenu
+emacs
 i3status-rust
 nano
 sway
+```
+
+The font used are provided by the following Arch Linux packages:
+
+```
+ttf-comic-mono-git
+ttf-jetbrains-mono
 ```
