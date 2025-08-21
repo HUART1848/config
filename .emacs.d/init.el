@@ -17,5 +17,13 @@
 
 (add-to-list 'backup-directory-alist (cons "." "~/.emacs.d/backups/"))
 
+(global-set-key [f4] 'compile)
 (global-set-key [f5] 'recompile)
+(global-set-key [f9] 'eglot)
 (global-set-key (kbd "C-S-c") 'mc/edit-lines)
+
+(with-eval-after-load 'eglot
+  (add-to-list 'eglot-server-programs
+               '(rust-mode . ("rust-analyzer")))
+  (add-to-list 'eglot-server-programs
+               '(csharp-mode . ("omnisharp" "-lsp"))))
